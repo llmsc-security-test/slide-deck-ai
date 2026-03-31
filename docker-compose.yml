@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    network_mode: bridge
     container_name: slide-deck-ai-container
     restart: unless-stopped
     environment:
